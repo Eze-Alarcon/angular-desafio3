@@ -3,24 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AbueloComponent } from './components/abuelo/abuelo.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { Hijo1Component } from './components/hijo1/hijo1.component';
-import { Hijo2Component } from './components/hijo2/hijo2.component';
-import { Nieto1Component } from './components/nieto1/nieto1.component';
+import { FormulariosComponent } from './clase6/formularios/formularios.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AbueloComponent,
-    Hijo1Component,
-    Hijo2Component,
-    Nieto1Component
+    FormulariosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
